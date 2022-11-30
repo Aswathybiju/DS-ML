@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+data = {'Java':22.2, 'Python':17.6, 'PHP':8.8,'JavaScript':8,'C#':7.7,'C++':6.7}
+courses = list(data.keys())
+values = list(data.values())
+fig = plt.figure(figsize = (10, 5))
+plt.bar(courses, values, color ='maroon',width = 0.4)
+plt.xlabel("Programming languages")
+plt.ylabel("Popularity")
+plt.title("Popularity of Programming languages")
+plt.show()
